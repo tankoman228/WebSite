@@ -14,11 +14,11 @@
     <h1>Cubes & Mods</h1>
     <img src="img/frog.png" alt="LOGO">
 
-    <div class="flex flex-col justify-center items-left bg-gray-200">
+    <div class="items-left bg-gray-200">
 
         <h2>Консоль сервера ??ИМЯ??</h2>
 
-        <div class="bg-black p-4 border border-gray-700 rounded-lg" style="height: 400px; width: 50%; overflow: hidden;">
+        <div class="bg-black p-4 border border-gray-700 rounded-lg" style="height: 500px; width: 70%; overflow: hidden; font-size: 18px">
             <pre class="text-white whitespace-nowrap overflow-y-scroll" style="height: calc(100% - 40px); margin: 0;">
                 [Jijka] Mine is empty
                 <br> [Server] Cause you're stupid
@@ -44,12 +44,10 @@
             </div>
         </div>
 
-
-
-        <button>Вкл</button>
-        <button>Выкл</button>
-        <button>Рестарт</button>
-        <button>Убить процесс</button>
+        <button class="btn-blue">Вкл</button>
+        <button class="btn-blue">Выкл</button>
+        <button class="btn-blue">Рестарт</button>
+        <button class="btn-red">Убить процесс</button>
 
         <h2>Занято ресурсов:</h2>
         <progress value="24" max="100">??LIMITS?? GB</progress>
@@ -58,20 +56,28 @@
         <button>Создать</button>
         <label>Backup name</label>
 
-        <div>
-            <div>
-                <p>??DATETIME??</p>
-                <h3>??BNAME??</h3>
-                <button>Откат к</button>
-                <button>Удалить</button>
-            </div>
-            <div>
-                <p>??DATETIME??</p>
-                <h3>??BNAME??</h3>
-                <button>Откат к</button>
-                <button>Удалить</button>
+        <h2 class="text-xl font-semibold mb-4">Занято ресурсов:</h2>
+        <progress class="w-full h-6 rounded-lg bg-gray-200" value="24" max="100">??LIMITS?? GB</progress>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Бекапы:</h2>
+        <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 mb-4">Создать</button>
+        <label class="block text-gray-700 mb-2">Backup name</label>
+
+        <div class="space-y-4" style="font-size: 18px;">
+            <div class="border rounded-lg p-4 shadow-md flex items-center">
+                <div>
+                    <p class="text-gray-600">??DATETIME??</p>
+                    <h3 class="text-lg font-semibold">??BNAME??</h3>
+                </div>
+                <div class="flex space-x-1" style="width: 6%"></div>
+                <div class="flex space-x-1" style="font-size: 30px;">
+                    <button class="btn-red">Откат к</button>
+                    <div class="flex space-x-1" style="width: 6%"></div>
+                    <button class="btn-red">Удалить</button>
+                </div>
             </div>
         </div>
+
 
         <h2>Ссылки</h2>
         <dl>
