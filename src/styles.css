@@ -3,15 +3,18 @@
 @tailwind utilities;
 
 body {
+    @apply bg-green-600;
     font-size: 36px;
+    background-color: #fafafa;
 }
 
-.btn {
-    border-width: medium;
-    padding: 10%;
-    float: left;
-    outline: black;
-    border-radius: 10%;
+h2 {
+    @apply font-semibold mt-6 mb-2;
+    font-size: 48px;
+}
+
+a {
+    @apply text-blue-700 hover:underline;
 }
 
 .btn-blue {
@@ -19,6 +22,11 @@ body {
     bg-blue-500
     text-black
     hover:bg-green-600;
+    border-radius: 15vw;
+    border-width: medium;
+    padding: 10px;
+    float: left;
+    outline: black;
 }
 
 .btn-red {
@@ -26,4 +34,9 @@ body {
     bg-red-500
     text-white
     hover:bg-black;
+    border-radius: 15vw;
+    border-width: medium;
+    padding: 10px;
+    float: left;
+    outline: black;
 }
