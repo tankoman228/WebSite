@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-green-600;
     font-size: 36px;
-    background-color: #fafafa;
 }
 
 h2 {
@@ -21,7 +19,9 @@ a {
     @apply
     bg-blue-500
     text-black
-    hover:bg-green-600;
+    hover:bg-green-600
+    border-black
+    font-bold;
     border-radius: 15vw;
     border-width: medium;
     padding: 10px;
@@ -33,7 +33,9 @@ a {
     @apply
     bg-red-500
     text-white
-    hover:bg-black;
+    hover:bg-black
+    font-bold
+    border-black;
     border-radius: 15vw;
     border-width: medium;
     padding: 10px;

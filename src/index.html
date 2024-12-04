@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-green">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,16 @@
 
     <title>Tailwind CSS Test</title>
 </head>
-<body class="bg-gray-100">
 
-<h1 class="p-4">Cubes & Mods</h1>
-<img src="img/frog.png" alt="LOGO" style="float: right; margin-right: 15%; margin-top: -50px;">
+<body class="bg-green-400 grid justify-center justify-items-center">
+
+<div class="bg-gray-200" style="width: 70%; margin-top: 13vh;">
+
+<h1 class="p-4 font-extrabold" style="margin-top: -13vh; font-size: xxx-large">Cubes & Mods</h1>
+<img src="img/frog.png" alt="LOGO" style="float: right; margin-right: 5%; margin-top: -50px;">
 
 <div class="mx-auto p-14">
-
-    <div class="items-left bg-green-400" style="padding: 2%">
+    <div class="items-left" style="padding: 2%">
 
         <h2>Консоль сервера ??ИМЯ??</h2>
 
@@ -56,32 +58,46 @@
         </div>
 
         <h2>Занято ресурсов:</h2>
-        <div class="relative w-80 h-20">
+        <div class="relative h-20">
             <div class="absolute inset-0 bg-green-500 rounded-lg"></div>
             <div class="absolute inset-0 bg-red-500 rounded-lg" style="width: 48%;"></div> <!-- Отображаем заполнение -->
-            <div class="absolute inset-0 flex items-center justify-center text-xl text-white">
+            <div class="absolute inset-0 flex items-center justify-center text-xxl text-white font-extrabold">
                 24/50 GB
             </div>
         </div>
 
         <h2>Бекапы:</h2>
-        <button>Создать</button>
-        <label>Backup name</label>
 
-        <h2>Бекапы:</h2>
-        <button class="btn-blue">Создать бекап</button>
+        <div class="flex space-x-2 mt-2">
+            <button class="btn-blue">Создать бекап</button>
+        </div>
 
-        <div class="space-y-4" style="font-size: 24px;">
-            <div class="border rounded-lg p-4 shadow-md flex items-center">
+
+        <div class="flex space-x-2 mt-2" style="font-size: 24px;">
+            <div class="border rounded-lg p-4 shadow-md flex items-center justify-between w-full">
                 <div>
                     <p class="text-gray-600">??DATETIME??</p>
                     <h3 class="text-lg font-semibold">??BNAME??</h3>
                 </div>
-                <div class="flex space-x-1" style="width: 6%"></div>
-                <div class="flex space-x-1" style="font-size: 30px;">
+                <div class="flex space-x-2">
                     <button class="btn-red">Откатить к бекапу</button>
-                    <div class="flex space-x-1" style="width: 6%"></div>
+                    <div class="opacity-0">____</div>
                     <button class="btn-red">Удалить бекап</button>
+                    <div class="opacity-0">_________костыль_______</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex space-x-2 mt-2" style="font-size: 24px;">
+            <div class="border rounded-lg p-4 shadow-md flex items-center justify-between w-full">
+                <div>
+                    <p class="text-gray-600">??DATETIME??</p>
+                    <h3 class="text-lg font-semibold">??BNAME??</h3>
+                </div>
+                <div class="flex space-x-2">
+                    <button class="btn-red">Откатить к бекапу</button>
+                    <div class="opacity-0">____</div>
+                    <button class="btn-red">Удалить бекап</button>
+                    <div class="opacity-0">_________костыль_______</div>
                 </div>
             </div>
         </div>
@@ -111,12 +127,10 @@
         </dl>
 
     </div>
-
-
-
+</div>
 </div>
 
-<footer>
+<footer class="text-black">
     C&M Все права защищены email: tankoman228@gmail.com
 </footer>
 
